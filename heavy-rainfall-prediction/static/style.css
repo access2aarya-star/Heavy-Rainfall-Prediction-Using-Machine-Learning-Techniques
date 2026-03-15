@@ -1,0 +1,171 @@
+body{
+
+margin:0;
+font-family:'Segoe UI',sans-serif;
+
+background:linear-gradient(120deg,#4facfe,#00f2fe);
+
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+
+}
+
+/* Main Card */
+
+.main-card{
+
+background:white;
+padding:40px;
+border-radius:15px;
+
+width:450px;
+
+text-align:center;
+
+box-shadow:0 10px 40px rgba(0,0,0,0.25);
+
+}
+
+/* Title */
+
+h1{
+
+color:#333;
+
+}
+
+/* Subtitle */
+
+.subtitle{
+
+color:#777;
+margin-bottom:25px;
+
+}
+
+/* Form Grid */
+
+.form-grid{
+
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:12px;
+
+}
+
+/* Inputs */
+
+input,select{
+
+padding:10px;
+
+border-radius:6px;
+
+border:1px solid #ddd;
+
+font-size:14px;
+
+}
+
+/* Button */
+
+.predict-btn{
+
+margin-top:20px;
+
+padding:12px 25px;
+
+background:#4facfe;
+
+border:none;
+
+border-radius:6px;
+
+color:white;
+
+font-size:16px;
+
+cursor:pointer;
+
+transition:0.3s;
+
+}
+
+.predict-btn:hover{
+
+background:#00c6ff;
+
+}
+
+/* Rainfall Value */
+
+.rain-value{
+
+font-size:40px;
+color:#0077ff;
+
+}
+
+/* Safe Box */
+
+.safe-box{
+
+background:#d4edda;
+color:#155724;
+
+padding:15px;
+border-radius:8px;
+margin-top:20px;
+
+font-weight:bold;
+
+}
+
+/* Warning */
+
+.warning-box{
+
+background:#fff3cd;
+color:#856404;
+
+padding:15px;
+border-radius:8px;
+margin-top:20px;
+
+font-weight:bold;
+
+}
+
+/* Danger */
+
+.danger-box{
+
+background:#f8d7da;
+color:#721c24;
+
+padding:15px;
+border-radius:8px;
+margin-top:20px;
+
+font-weight:bold;
+
+}
+
+/* Back Button */
+
+.back-btn{
+
+display:inline-block;
+margin-top:20px;
+
+padding:10px 20px;
+
+background:#333;
+color:white;
+
+border-radius:6px;
+text-decoration:none;
+
+}
