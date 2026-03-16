@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Prediction Result</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="main-card">
+
+<h1>🌧 Prediction Result</h1>
+
+<h2 class="rain-value">{{prediction}} mm</h2>
+
+{% if prediction < 800 %}
+
+<div class="safe-box">
+✅ Safe Rainfall Level
+</div>
+
+{% elif prediction < 1500 %}
+
+<div class="warning-box">
+⚠ Rainfall Warning
+</div>
+
+{% else %}
+
+<div class="danger-box">
+🚨 High Rainfall Risk
+</div>
+
+{% endif %}
+
+<a class="back-btn" href="/">Predict Again</a>
+
+</div>
+
+</body>
+</html>
